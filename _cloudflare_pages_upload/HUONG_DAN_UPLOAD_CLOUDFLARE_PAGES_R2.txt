@@ -1,0 +1,22 @@
+HƯỚNG DẪN UPLOAD CLOUDFLARE PAGES + R2 THỦ CÔNG
+====================================================
+
+Cloudflare Pages bị giới hạn 25 MiB cho MỖI file tĩnh. Vì vậy các file qgis2web lớn đã được tách riêng sang thư mục _cloudflare_r2_upload.
+
+1) Upload toàn bộ NỘI DUNG trong thư mục _cloudflare_pages_upload lên Cloudflare Pages.
+   Không upload thư mục mẹ, chỉ upload các file/thư mục bên trong nó.
+
+2) Upload toàn bộ NỘI DUNG trong thư mục _cloudflare_r2_upload lên bucket Cloudflare R2, GIỮ NGUYÊN cấu trúc thư mục. Ví dụ: layers/Ranhgiitnh_1.js phải nằm trên R2 đúng đường dẫn đó.
+
+3) Trước khi upload Pages, mở _cloudflare_pages_upload/index.html và thay tất cả:
+   __R2_PUBLIC_URL__
+   bằng Public URL của bucket R2, ví dụ:
+   https://pub-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.r2.dev
+
+4) Các file lớn được tách sang R2:
+   - layers/Ranhgiixphng_1.js
+
+TÓM TẮT GÓI
+- File đưa vào Pages: 52
+- File đưa vào R2: 1
+- Tổng dung lượng file R2: 275.0 MB
