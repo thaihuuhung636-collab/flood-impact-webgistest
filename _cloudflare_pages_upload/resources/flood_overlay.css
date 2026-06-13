@@ -1,0 +1,24 @@
+
+/* Flood overlay added after native qgis2web export. Background structure remains qgis2web. */
+#floodAnimPanel{position:absolute;right:18px;bottom:18px;z-index:10000;background:#fff;border-radius:16px;box-shadow:0 6px 24px rgba(0,0,0,.25);padding:12px 14px;min-width:330px;max-width:460px;font-family:Arial,sans-serif;color:#122}
+#floodAnimPanel .floodTitle{font-weight:800;color:#0d47a1;margin-bottom:6px;font-size:15px}
+#floodAnimPanel .row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:4px 0}
+#floodAnimPanel button{border:0;background:#f2f5f7;border-radius:9px;padding:7px 10px;font-weight:700;cursor:pointer}
+#floodAnimPanel button:hover{background:#e3f2fd}
+#floodAnimPanel input[type=range]{width:100%}
+#floodAnimPanel .muted{color:#667;font-size:12px}
+#floodAnimPanel label.mode{background:#f7fbff;border:1px solid #d7e5f4;border-radius:8px;padding:5px 8px;font-weight:700;font-size:12px;color:#123}
+#floodLayersBox{max-height:140px;overflow:auto;margin:6px 0;border-top:1px solid #e4edf5;border-bottom:1px solid #e4edf5;padding:5px 0}
+#floodLayersBox label{display:block;margin:3px 0;font-size:12px}
+#floodAttrPanel{position:absolute;right:18px;top:18px;z-index:10002;background:#fff;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.28);padding:14px;max-width:760px;width:760px;max-height:72vh;overflow:auto;font-family:Arial,sans-serif;color:#122}
+#floodAttrPanel h3,#floodTsPanel h3{margin:0 0 6px;font-size:22px;color:#122}
+#floodAttrPanel .muted,#floodTsPanel .muted{color:#667;margin-bottom:6px}
+#floodAttrPanel button,#floodTsPanel button{border:0;background:#f2f5f7;border-radius:10px;padding:8px 11px;margin:2px;font-weight:700;cursor:pointer}
+.floodAttrTable{border-collapse:collapse;width:100%;font-size:13px;background:#f7f7f7}
+.floodAttrTable th{background:#e8eef5;text-align:left;padding:7px;border:1px solid #cfd8dc;width:46%;font-weight:800}
+.floodAttrTable td{padding:7px;border:1px solid #cfd8dc;vertical-align:top;background:#fbfdff}
+#floodTsPanel{position:absolute;right:18px;top:18px;z-index:10001;background:#fff;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.25);padding:14px;width:760px;max-width:calc(100vw - 80px);max-height:72vh;overflow:auto;font-family:Arial,sans-serif;color:#122}
+#floodChart{width:100%;height:360px}
+#popup.ol-popup{max-width:none}
+#popup-content .floodAttrTable{font-size:12px}
+@media(max-width:900px){#floodAttrPanel,#floodTsPanel{left:10px;right:10px;width:auto;max-width:none}#floodAnimPanel{left:10px;right:10px;min-width:0;max-width:none}}
